@@ -1,0 +1,27 @@
+SHOW TIMEZONE;
+
+SELECT now()
+
+CREATE TABLE timeZone (timeWithoutTimeZone TIMESTAMP WITHOUT TIME ZONE, timeZone TIMESTAMP WITH TIME ZONE);
+
+INSERT INTO timeZone VALUES('2026-10-03 08:24:00', '2026-10-03 08:24:00');
+
+SELECT * FROM timeZone;
+
+
+SELECT CURRENT_DATE
+
+SELECT now():: time;
+
+SELECT to_char('2027-10-03' :: date, 'yyyy/mm/dd')
+
+SELECT to_char(now(), 'MONTH');
+
+
+SELECT CURRENT_DATE - INTERVAL '1 year 1 month 1 day 50 min 10 sec';
+
+SELECT age(CURRENT_DATE, '2007/12/12');
+
+SELECT extract(MONTH FROM '2005/11/25':: date);
+
+SELECT 't'::BOOLEAN;
