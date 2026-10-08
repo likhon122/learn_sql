@@ -22,6 +22,6 @@ SELECT CURRENT_DATE - INTERVAL '1 year 1 month 1 day 50 min 10 sec';
 
 SELECT age(CURRENT_DATE, '2007/12/12');
 
-SELECT extract(MONTH FROM '2005/11/25':: date);
+SELECT extract(YEAR FROM '2005/11/25':: date);
 
 SELECT 't'::BOOLEAN;
